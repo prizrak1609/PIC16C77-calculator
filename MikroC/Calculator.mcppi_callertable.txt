@@ -1,0 +1,27 @@
+main
+	__CC2DW
+		____DoICP
+	init_timer0
+		set_timer0_prescaler
+interrupt
+	check_row0
+		Button
+			Delay_500us
+	check_row1
+		Button
+			Delay_500us
+	check_row2
+		Button
+			Delay_500us
+	check_row3
+		Button
+			Delay_500us
+	print_or_do_command
+		print
+			display
+		clear_display
+			display
+		calculate
+			Div_8X8_S
+			Mul_8X8_U
+		clean_data
